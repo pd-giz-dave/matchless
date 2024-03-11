@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20240311210915"
+  },
+  "applications": ["matchless"],
+  "entityTableName": "material",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Material",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "materialMethod",
+      "otherEntityRelationshipName": "name",
+      "relationshipName": "method",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

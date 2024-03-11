@@ -1,0 +1,28 @@
+{
+  "annotations": {
+    "changelogDate": "20240311211015"
+  },
+  "applications": ["matchless"],
+  "entityTableName": "material_method",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "MethodType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "BUY,MAKE"
+    }
+  ],
+  "name": "MaterialMethod",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "material",
+      "otherEntityRelationshipName": "method",
+      "relationshipName": "name",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
